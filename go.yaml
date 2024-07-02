@@ -19,7 +19,7 @@ spec:
     
       containers: 
        - name: go
-         image: rafaelbsilvano/go_ci:23 
+         image: rafaelbsilvano/go_ci::${{github.run_number}}
          ports:
           - containerPort: 8000
          env:
